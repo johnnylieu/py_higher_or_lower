@@ -41,7 +41,7 @@ def ask(num1=rand_num()[0], num2=rand_num()[1], statement='', user_score=0):
             os.system('cls')
             print(f"{logo}\nSorry, that's wrong. Final score: {score}")
     
-    if user_selection == 'b':
+    elif user_selection == 'b':
         if b_score > a_score:
             score += 1
             statement = f"You're right! Current score: {score}."
@@ -49,6 +49,8 @@ def ask(num1=rand_num()[0], num2=rand_num()[1], statement='', user_score=0):
         else:
             os.system('cls')
             print(f"{logo}\nSorry, that's wrong. Final score: {score}")
+    else:
+        print(f"{logo}\nSorry that's not an option, you lose. Final score: {score}")
 
 
 def main():
