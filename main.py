@@ -29,6 +29,8 @@ def ask(num1=rand_num()[0], num2=rand_num()[1], statement='', user_score=0):
         b_description = data[num2]['description']
         b_country = data[num2]['country']
         print(f"🅱️  Compare B: {b_name}, a {b_description}, from {b_country}.")
+    else:
+        ask(num1=rand_num()[0], num2=rand_num()[1], statement='', user_score=0)
 
     user_selection = (input("❔ Who has more followers? Type 'A' or 'B': ")).lower()
 
