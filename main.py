@@ -50,6 +50,7 @@ def ask(num1=rand_num()[0], num2=rand_num()[1], statement='', user_score=0):
             os.system('cls')
             print(f"{logo}\n❌  Sorry, that's wrong. Final score: {score}")
     else:
+        os.system('cls')
         print(f"{logo}\n❌  Sorry that's not an option, you lose. Final score: {score}")
 
 
