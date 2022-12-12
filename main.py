@@ -4,9 +4,9 @@ from art import logo, vs
 import os
 
 def rand_num():
-    rand_num1 = randint(0, len(data))
-    rand_num2 = randint(0, len(data))
-    rand_num3 = randint(0, len(data))
+    rand_num1 = randint(0, len(data)-1)
+    rand_num2 = randint(0, len(data)-1)
+    rand_num3 = randint(0, len(data)-1)
 
     return rand_num1, rand_num2, rand_num3
 
