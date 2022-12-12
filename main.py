@@ -20,6 +20,7 @@ def ask(num1=rand_num()[0], num2=rand_num()[1], statement='', user_score=0):
         a_score = data[num1]['follower_count']
         a_description = data[num1]['description']
         a_country = data[num1]['country']
+        
         if statement != '':
             print(statement)
         print(f"🅰️  Compare A: {a_name}, a {a_description}, from {a_country}.")
